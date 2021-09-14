@@ -28,7 +28,7 @@ for i,n in enumerate(eng):
     if key1=='y':
         while(True):
             text = gTTS(text=n,lang='en')
-            file = './newword/temp.mp3'
+            file = './newword/temp/temp.mp3'
             text.save(file)
             os.system("afplay "+file)
             key1 = input("もう一度再生させますか?y|n:")
